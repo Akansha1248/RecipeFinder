@@ -9,7 +9,8 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: "${master}", url: "${https://github.com/Akansha1248/RecipeFinder.git}"
+                // Corrected the use of BRANCH and GIT_REPO
+                git branch: "${BRANCH}", url: "${GIT_REPO}"
             }
         }
 
