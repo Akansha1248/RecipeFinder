@@ -9,7 +9,6 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                // Corrected the use of BRANCH and GIT_REPO
                 git branch: "${BRANCH}", url: "${GIT_REPO}"
             }
         }
