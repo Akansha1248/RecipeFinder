@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        GIT_REPO = 'https://github.com/yourusername/recipe-finder.git'
+        GIT_REPO = 'https://github.com/Akansha1248/RecipeFinder.git'
         BRANCH = 'main'
     }
 
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: "${BRANCH}", url: "${GIT_REPO}"
+                git branch: "${master}", url: "${https://github.com/Akansha1248/RecipeFinder.git}"
             }
         }
 
